@@ -1,3 +1,12 @@
-# Abstract
-This program is to play AnimalChess.
-If you want to see the rule or command, Please excute this program and put "M".
+# 遊び方
+まずプログラムを実行してください．
+
+`$javac AnimalChess.java`
+`$java AnimalChess`
+
+その後，対局開始を選び，手番を選択します．
+`1:対局開始 2:棋譜読み込み>1`
+`1:対人戦 2:対CPU戦>2`
+
+操作方法は，対局中に"M"を入力することで見られます．
+また，対局した棋譜を保存すると読み込んで見直すことも出来ます．
