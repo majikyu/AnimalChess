@@ -202,7 +202,7 @@ public class AnimalChess{
        int M = new java.util.Scanner(System.in).nextInt();
        switch(M){
            case 1:
-                Path p1 = Paths.get("C:/Users/takayuki/Documents/program/java/どうぶつ将棋/manuals/rule.txt");
+                Path p1 = Paths.get("./manuals/rule.txt");
                 byte[] fileContentBytes;
                 try{
                     fileContentBytes = Files.readAllBytes(p1);
@@ -220,7 +220,7 @@ public class AnimalChess{
                 System.out.println(fileContentStr);
                 break;
            case 2:
-                Path p2 = Paths.get("C:/Users/takayuki/Documents/program/java/どうぶつ将棋/manuals/move.txt");
+                Path p2 = Paths.get("./manuals/move.txt");
                 // if(Files.exists(p2) != true)System.out.println("マニュアルが存在しません");
                 byte[] fileContentBytes2;
                 try{
@@ -239,7 +239,7 @@ public class AnimalChess{
                 System.out.println(fileContentStr2);
                 break;
             case 3:
-                Path p3 = Paths.get("C:/Users/takayuki/Documents/program/java/どうぶつ将棋/manuals/spec.txt");
+                Path p3 = Paths.get("./manuals/spec.txt");
                 // if(Files.exists(p3) != true)System.out.println("マニュアルが存在しません");
                 byte[] fileContentBytes3;
                 try{
@@ -289,7 +289,7 @@ public class AnimalChess{
             do{
                 System.out.print("棋譜ファイル名>");
                 name = new java.util.Scanner(System.in).next();
-                path = Paths.get("C:/Users/takayuki/Documents/program/java/どうぶつ将棋/Acr/" + name + ".acr");
+                path = Paths.get("./Acr/" + name + ".acr");
                 if(Files.exists(path) == true){
                         System.out.println("その名前は既に使われています");
                     }
@@ -310,7 +310,7 @@ public class AnimalChess{
         do{
         System.out.print("棋譜ファイル名>");
         name = new java.util.Scanner(System.in).next();
-        path = Paths.get("C:/Users/takayuki/Documents/program/java/どうぶつ将棋/Acr/" + name + ".acr");
+        path = Paths.get("./Acr/" + name + ".acr");
         if(Files.exists(path) != true){
                 System.out.println("そのファイルは存在しません");
             }
